@@ -44,7 +44,7 @@ const MarkdownContent: React.FC<MarkdownContentProps> = ({
 				console.error("Error:", error);
 				setMarkdown("# Error\nCould not load the Markdown file.");
 			});
-	}, []);
+	}, [url]);
 
 	return (
 		<div className="modal">

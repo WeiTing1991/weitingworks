@@ -6,6 +6,7 @@
 				{
 					"link": "",
 					"title": "Software Developer",
+					"group": "",
 					"duration": "Jan 2025 - Present",
 					"skill": [
 						"Typescript | Python | Docker"
@@ -90,6 +91,7 @@
 				{
 					"link": "",
 					"title": "Researcher and Lab Manager",
+					"group": "",
 					"duration": "Sep 2019 - Sep 2020",
 					"skill": [
 						"Python | Java | Rhino&Grasshopper | UR Robot"
@@ -106,6 +108,7 @@
 				{
 					"link": "",
 					"title": "Computational Software Engineer",
+					"group": "",
 					"duration": "Jan 2019 - Aug 2019",
 					"skill": [
 						"C/C++ | Python | ArchiCAD | Rhino&Grasshopper"
