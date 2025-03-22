@@ -37,14 +37,14 @@ jobs:
           bun run predeploy
           bun run deploy
 
-      - name: Create .nojekyll file
-        run: |
-          mkdir -p ./out && touch ./out/.nojekyll
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
+      # - name: Create .nojekyll file
+      #   run: |
+      #     mkdir -p ./out && touch ./out/.nojekyll
+      #
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     path: ./out
 
   # deploy:
   #   environment:
