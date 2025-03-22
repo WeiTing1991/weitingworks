@@ -1,0 +1,57 @@
+
+
+
+Year : 2021
+Place : Zürich, Switzerland
+Person Role : Robotic motion planning for various spraying methods and implementing segmentation for construction on-site.
+
+Instructors : Daniela Mitterberger, Selen Ercan Jenny, Eliott Sounigo, Ping-Hsun Tsai, Petrus Aejmelaeus-Lindström, David Jenny, Hannes Mayer
+Intuitive Design Team : Carlos Wilkening, Foteini Salveridou, Lena Kitani, Priyank Soni
+Design Team : Artemis Maneka, Guillaume Jami, Pascal Bach, Simon Griffioen
+Fabrication Team : Beril Önalan, Chan Yen-Fen, Co Tsuruta, Evgenia Angelaki, Ilaria Giacomini, Liya Sunny Anthraper, Wei-Ting Chen, Wei Chengyuan
+
+Supporting Technicians : Philippe Fleischmann, Michael Lyrenmann, Andi Reüsseer, Tobias Hartmann
+Industry Partners : Eberhard, Giovanni Russo AG
+
+
+
+Abstract
+This is a 11-week project of the MAS ETH in Architecture and Digital Fabrication explores the potential of novel digital fabrication processes 
+to implement a full-scale construction project at Rümlang, Zürich. The topic combines 2 Gramazio Kohler Research’s ongoing projects, 
+Robotic Plaster Spraying and Human-Machine Collaboration, to propose new design and fabrication methodologies under the name of Intuitive 
+Robotic Plastering. On one hand the concept of Human-Machine Collaboration(Intuitive Design) is too think how human gestures are used as a 
+design tool expressing very singular and sensible design process. On the other hand, Robotic Plaster Spraying allows to think through a different 
+paradigm where and how plaster is applied by iteration of fine and subtle layers on the wall.
+
+https://videopress.com/v/BV8YGQzu
+<iframe width="560" height="315" src="https://videopress.com/embed/BV8YGQzu" frameborder="0" allowfullscreen></iframe>
+<script src="https://videopress.com/videopress-iframe.js"></script>
+
+
+Prototyping and Spraying method
+
+Before moving to the site, Rümlang, a series of prototyping is conducted by spraying plaster on the 1.2m x 2m panels, 
+which largely helps us understand the influence of parameters like velocity, angle and distance of spraying(end-effector distance) 
+on the material behavior.
+
+Three basic parameters are to develop the robotic spraying strategy.The end-effector distance and the velocity of spraying are mapped taking into account the recorded human gesture. 
+Remapping these values according to the limitations of the robot and using feedback from the prototypes we initially did. 
+As the robot moves closer to the wall, the velocity becomes higher and this is where the “carving” effect of the material becomes visible. 
+In addition, we applied a Pitch end-effector angle on the ends of the spraying paths to achieve material fading out.
+
+
+On-site construction and Segmentation
+Global localization and local segmentation are two important parts of on-site fabrication. For the global localization it requires 11 
+tower positions to finish the overall design and  the local segmenting , base on the robot reachability and the design, it requires 
+2 to 4 axis positions to cover the design of current tower location.
+
+The final result is the design and construction of an interior space within an existing structure at Rümlang. 
+The room offers us approximate 200m² to apply an adaptive thin layer printing process with an interactive design procedure – 
+where a robotic arm sprays plaster following recorded hand gestures, creating an interplay between human instructed and 
+digitally controlled fabrication processes with new aesthetic of conventional material.
+
+
+
+
+
+

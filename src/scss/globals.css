@@ -1,0 +1,87 @@
+/* @import "tailwindcss"; */
+/* @import "tailwindcss/typography"; */
+
+:root {
+  /* Dark mode variables (Rose Pine) */
+  --navy-shadow: rgba(22, 20, 31, 0.7);
+  --background-color: #191724;
+  --lightest-navy: #403c58;
+  --light-navy: #2a273f;
+  --dark-slate: #6e6a86;
+  --slate: #908caa;
+  --light-slate: #e0def4;
+  --lightest-slate: #c4a7e7;
+  --theme-color: #eb6f92;
+  --white: #ffffff;
+}
+
+/* Light mode variables (Rose Pine Dawn) */
+[data-theme='light'] {
+  :root {
+    --navy-shadow: rgba(242, 237, 236, 0.7);
+    --background-color: #faf4ed;
+    --lightest-navy: #f2e9e1;
+    --light-navy: #ece3db;
+    --dark-slate: #9893a5;
+    --slate: #797593;
+    --light-slate: #575279;
+    --lightest-slate: #907aa9;
+    --theme-color: #d7827e;
+    --white: #ffffff;
+  }
+}
+
+::-moz-selection {
+  color: white;
+  background: var(--theme-color);
+}
+
+::selection {
+  color: white;
+  background: var(--theme-color);
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: var(--background-color);
+  counter-reset: title;
+  z-index: 99;
+}
+
+main {
+  transition: 0.3s ease-in-out;
+  z-index: 99;
+}
+
+.blur {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  z-index: 99;
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-slate) var(--background-color);
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-slate);
+  border: 3px solid var(--background-color);
+  border-radius: 10px;
+}

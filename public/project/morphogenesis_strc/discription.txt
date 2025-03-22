@@ -1,0 +1,68 @@
+            <h1 class="h2">Autonomous Tectonic in Morphogenesis Structure</h2>
+            
+            <p>Nonplanar robotic 3D printing with granular matters</p>
+            <span class="text-muted">Research Project</span></p>
+
+              <p class="fw-lighter"><i>
+                Year : 2018<br>
+                Place : Taiwan<br>
+                <br>
+                Author : Wei-Ting Chen<br>
+                Advisor: Prof. Chen Chen-Cheng<br>
+                Collaboration: NARLabs<br></i></p>
+
+
+
+Abstract
+This is a research_based thesis with morphogenesis structure with nonplanar robotic 3D printing.
+The process of matter is to gather independently or have an agent system, and it would create new
+methods with autonomous assemblies and collective construction through new machines and materials.
+As a bottom-up development, this process attempts to practice extensibility, adaptability, repeatability
+and any number of aggregations.
+
+
+Morphogenesis structure study
+In the steps of design, the particle units start with points by complex systems and generative algorithms,
+making a large number of discrete individuals grow and contributing to one or more faces of continuous
+geometry.It divides into three different categories: “Morphing of the point – Curve”, “Morphing of the curve – Surface”,
+and “Morphing of the surface – Space”.
+
+
+reinterpretd historic gothic church
+
+In the first stage, the goal is to use modern tools to i n terpret the long established Gothic church
+through movement of particles to explore the possibility of generative architectural space.
+By comparing the traditional and contemporary media of design, The existing method of architectural
+design was removed. The collection of multi-scale spatial elements blurs the
+boundary between form, structure and decoration, reinterpreting the meaning of Gothic church space; this
+meaning is the expression of force in structure and emphasized in the traditional Gothic church.
+Also, the generation process of computational dynamic
+simulation implies the formation of the Gothic church structure.
+
+virtual reality
+This space of the Gothic church based on a computersimulation is combined with the virtual reality system,
+called VIVE developed by HTC, creating the simulated space experience through the head-mounted display.
+
+robotic fabrication
+The simulated Gothic space is complex and cannot be easily constructed by hand, some of the simulated building elements 
+were actually constructed in the real space by the Robotic 3D Printing with nonplanar method.
+The simulated Gothic space is complex and cannot be easily constructed by hand, some of the simulated building elements 
+were actually constructed in the real space by the Robotic 3D Printing with nonplanar method.
+The simulated Gothic space is complex and cannot be easily constructed by hand, some of the simulated building elements 
+were actually constructed in the real space by the Robotic 3D Printing with nonplanar method.
+
+
+
+
+As well as, I’m also Mr. Chen’s thesis design advisor in the Fall, 2017 and the Spring 2018. 
+In his thesis design "Autonomous Tectonic: Meta-Matter", Mr. Chen reinterpreted the generation 
+process of the historic Gothic church with contemporary digital design media. Mr. Chen’s work 
+includes the following three parts: (1) computer simulation: The particle simulation was
+ applied to explore the process for generation, and different agent-based systems and computer 
+animation were used to simulate the generation of spaces; (2) virtual reality: computer-simulated 
+Gothic church space, and combined with the virtual reality VIVE system developed by HTC after computing
+, to entering the virtual space for experiencing through the gargle; (3) real construction: the simulated 
+Gothic space is complex and cannot be easily constructed by hand, some of the simulated building elements 
+were actually constructed in the real space by the 7-axis KUKA 3D Printing. Mr. Chen’s thesis project won 
+several important awards at Taiwan, as well as his thesis work was
+

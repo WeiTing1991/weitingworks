@@ -1,0 +1,39 @@
+FORM FINDING GEOMETRY WORKSHOP
+
+Workshop
+
+Year : 2018
+Place : Taiwan
+
+Lecturer : Wei-Ting Chen, Yu Chen, Ping-Hsun Tsai
+Teaching Assistant : Ming-Yang Wang, Po-Yen Chen
+
+
+Description
+Nowadays, we use several different 3D modeling software in architectural design process. At our five-day workshop,
+we mainly focus on establishing a digital design workflow and integrating different software.
+The workshop consists of four parts:
+1.basic geometry construction; 2.form-finding through physical simulation; 3.utilizing oscillating tangential cutting machine to produce
+physical model; 4. data visualization and rendering.
+The workshop anticipated to stimulate new model for digital design.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

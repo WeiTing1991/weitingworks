@@ -1,0 +1,68 @@
+
+
+Swiss Federal Institute of Technology in Zürich (ETHZ)
+Institute for Technology in Architecture
+
+
+Year : 2021
+Place : ETH Zürich, Switzerland
+
+Author : Liya Sunny Anthraper & Wei-Ting Chen
+Supervisors : Ana Anton, Eleni Skevaki and Lex Reiter
+Collaboration: Gonzalo Casas and Philippe Fleischmann
+
+
+Abstract
+The method explored is by combining robotic 3D printing
+white concrete and robotic glass placing into one system which can further rapid automation for the field.
+The core challenge with this research is the integration of elements being placed while printing. To tackle this,
+the research will develop a computational tool which allows to design different strategies for placing glass
+elements while simultaneously printing concrete which is then translated through a series of prototypes. The
+research would also focus on bridging the communication between both the robots and to design an end-effector
+for this system. To illustrate this process the research concludes with a 1:1 scale transparent concrete wall that
+allows us to reflect and evaluate the complete study.
+
+Desgin 
+we have identified certain rules and parameters while developing the
+computational tool.The computational tool is further classified by defining the shape of the wall, deciding
+distribution percentage, deforming the wall , path optimization and the final design is then sent for
+fabrication. This tool will further help develop the complete workflow, design logics and application for
+the fabrication
+
+Robotic
+The two fabrication processes are 3D Concrete printing and robotic Pick-and-Place. For 3D Concrete printing, using the
+ABB IRB 6700 with concrete extrusion end-effector. And the robotic Pick-and-Place method is using ABB
+IRB 4600 on overhead gantry and the primary tasks will be developing the end-effector gripper with the robotic
+fabrication setup. In addition, multi-robot systems will aim to be developed with two main task:development of end-effector gripper,
+and Coordination of two different robotic fabrication systems.
+
+Demonstrator
+The final design demonstrator is fabricated with a total of 324 glass test tubes. The
+demonstrator showcases a doubly curved geometry with gradient distribution of the glass. For placing the glass elements with the robot , the studied limitation would result in 200 glass elements
+in total instead of 324 glass elements. This result is derived from the limitation of the current setup as
+there would be only one glass per layer the placing robot would be able to place.
+
+Concrete extrusion is a continuous operation, therefore good coordination between the multi-robots is essential.
+During this process there may be collisions between the robots, the recycled glass objects and concrete
+extruder. To avoid this, the acceleration of the printing robot, the placing end-effector, collision zone of
+the robots, and global design need to be executed in an efficient manner. As per the current setup there
+is a limitation to the length of the wall that can be fabricated.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

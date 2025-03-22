@@ -1,0 +1,139 @@
+.markdown-content {
+  font-family: var(--raleway);
+  color: var(--slate);
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--raleway);
+    color: var(--lightest-slate);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+
+  h1 {
+    font-size: var(--tx2large);
+    margin-bottom: 2rem;
+
+    // &::after {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   top: 20px;
+    //   width: 300px;
+    //   height: 2px;
+    //   margin-left: 220px;
+    //   background-color: var(--lightest-navy);
+    // }
+  }
+
+  h2 {
+    font-size: var(--txlarge);
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    color: var(--slate);
+    margin-bottom: 1rem;
+    font-size: var(--tlarge);
+    letter-spacing: 0.07rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+  }
+
+  ul, ol {
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+
+    li {
+      font-family: var(--raleway);
+      line-height: 1.6rem;
+      font-weight: 500;
+      font-size: var(--tbase);
+      color: var(--slate);
+      position: relative;
+      margin-bottom: 0.5rem;
+
+      &:hover {
+        color: var(--white);
+      }
+    }
+  }
+
+  ul li::before {
+    content: "-";
+    position: absolute;
+    left: -20px;
+    top: 6px;
+    color: var(--theme-color);
+    line-height: 12px;
+  }
+
+  a {
+    color: var(--theme-color);
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 0.2rem;
+  }
+
+  blockquote {
+    border-left: 4px solid var(--theme-color);
+    padding-left: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-style: italic;
+  }
+
+  code {
+    font-family: var(--fira-code);
+    font-size: var(--tsm);
+    background-color: var(--light-navy);
+    color: var(--lightest-slate);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+  }
+
+  pre {
+    background-color: var(--light-navy);
+    color: var(--lightest-slate);
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+
+    code {
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--lightest-navy);
+    margin: 2rem 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    h1::after {
+      width: 200px;
+    }
+
+    p {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    h1::after {
+      width: 100px;
+    }
+  }
+}
