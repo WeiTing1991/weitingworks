@@ -32,6 +32,12 @@ jobs:
       - name: Install Dependencies
         run: bun install
 
+      - name: Cache Next.js build
+        uses: actions/cache@v3
+        with:
+          path: .next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
+
       - name: Build React App
         run: |
           bun run predeploy

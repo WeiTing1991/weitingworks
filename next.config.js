@@ -7,7 +7,7 @@ const nextConfig = {
   },
   assetPrefix: isProd ? '/weitingworks/' : '',
   basePath: isProd ? '/weitingworks' : '',
-  output: 'export'
+	output: 'standalone'
 };
 
 module.exports = nextConfig;
