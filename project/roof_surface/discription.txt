@@ -1,0 +1,28 @@
+Eral Corporate Exhibition Center
+Work project
+2018
+
+place: China
+Role: Project Consultant, Design and Geometrical Analysis&Optimization
+Type: Architectural design, Construction for geometry, Building envelope detailing
+Firm: maRco Facade Consultants
+
+
+Description
+This project is consoultant case to help architect firm with geometrical analysis and optimization, in addiiton, implenment the shop drawing.
+Digitally construct algorithmic models which combines digitized real information from site and includes all the façade parts and 
+components with parameters of quantities, material properties, fabrication and installation requirements. 
+
+Geometrical Analysis&Optimization
+Subject to design intent and fabricational principles, geometrical analysis & 
+optimizations are performed through data colection and analization with computational alghorithmic tools.
+Rationalized design according to materials, 
+construction methods and budget, 
+under the premise of maintaining the original intention of the design.
+
+Shop Drawings
+Develope architectural / constructional details with Designer 
+/ Contractor to ensure the aesthetics, performances, 
+and constructabilities of the building envelope. 
+
+Architectural Visualization

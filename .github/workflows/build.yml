@@ -1,0 +1,57 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Adjust to your default branch
+
+permissions:
+  contents: write # Allows writing to the repository (e.g., gh-pages branch)
+  pages: write # Allows deploying to GitHub Pages (if using actions/deploy-pages)
+  id-token: write # For authentication with GitHub Pages (if needed)
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Install Bun
+        run: |
+          curl -fsSL https://bun.sh/install | bash
+          echo "$HOME/.bun/bin" >> $GITHUB_PATH
+
+      - name: Install Dependencies
+        run: bun install
+
+      - name: Cache Next.js build
+        uses: actions/cache@v3
+        with:
+          path: .next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Build Next.js App
+        run: |
+          bun run build
+          bun run export
+        env:
+          NEXT_PUBLIC_BASE_PATH: "/weitingworks" # Adjust to your repo name
+
+      - name: Check Output Directory
+        run: ls -la out # Debugging step to confirm out exists
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          bunx gh-pages -d out --nojekyll --repo https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/WeiTing1991/weitingworks.git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
