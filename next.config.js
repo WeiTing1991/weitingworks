@@ -8,7 +8,8 @@ const nextConfig = {
 	// assetPrefix: isProd ? '/weitingworks/' : '',
 	basePath: "/weitingworks", // Matches your GitHub Pages URL (https://WeiTing1991.github.io/weitingworks/)
 	output: "standalone",
-	distDir: "build",
+	pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
+	// distDir: "build",
 };
 
 module.exports = nextConfig;
