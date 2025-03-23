@@ -49,8 +49,8 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          bunx gh-pages -d build --nojekyll --repo https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/WeiTing1991/weitingworks.git
+          # git config --global user.name "GitHub Actions"
+          # git config --global user.email "actions@github.com"
+          bunx gh-pages -d .next/standalone --nojekyll --repo https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/WeiTing1991/weitingworks.git
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
