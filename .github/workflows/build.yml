@@ -44,8 +44,8 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: "/weitingworks" # Adjust to your repo name
 
-      - name: Check Output Directory
-        run: ls -la build # Debugging step to confirm out exists
+      - name: Remove Unnecessary Cache Files
+        run: rm -rf out/cache
 
       - name: Deploy to GitHub Pages
         run: |
