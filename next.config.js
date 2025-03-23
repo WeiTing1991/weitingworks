@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
+// const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  assetPrefix: isProd ? '/weitingworks/' : '',
-  basePath: isProd ? '/weitingworks' : '',
-	output: 'standalone'
+  // assetPrefix: isProd ? '/weitingworks/' : '',
+	basePath: '/weitingworks', // Matches your GitHub Pages URL (https://WeiTing1991.github.io/weitingworks/)
+	output: 'export'
 };
 
 module.exports = nextConfig;
