@@ -42,7 +42,7 @@ function Projects() {
 								}}
 							>
 								<div className="project-image">
-									<div className="project-image-overlay">P</div>
+									<div className="project-image-overlay"></div>
 									<div className="project-image-container">
 										<Image src={image} fill alt={title} quality={100} />
 									</div>
