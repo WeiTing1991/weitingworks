@@ -41,7 +41,6 @@ jobs:
       - name: Build Next.js App
         run: |
           bun run build
-          bun run export
         env:
           NEXT_PUBLIC_BASE_PATH: "/weitingworks" # Adjust to your repo name
 
