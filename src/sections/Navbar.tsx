@@ -79,8 +79,8 @@ function Navbar() {
 						ease: "easeInOut",
 					}}
 				>
-					<Link href="/">
-						<p className="nav-items">WEITINGCHEN</p>
+					<Link href="/" className="nav-title">
+            WEITINGCHEN
 					</Link>
 				</motion.div>
 				<motion.div
