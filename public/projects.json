@@ -42,7 +42,7 @@
 			"link": "https://www.research-collection.ethz.ch/handle/20.500.11850/709797"
 		},
 		{
-			"title": "Casting Controller",
+			"title": "Robotic Casting Controller",
 			"image": "/project/casting_controller/featured.png",
 			"md":"/project/casting_controller/index.md",
 			"desc": "This project is the submoudle of Digital Casting System for PLC controller and ABB robot.",
@@ -61,8 +61,8 @@
 			"desc": "A digital controller setup for UR-10e and beckhoff PLC for robotic clay printing.",
 			"skills": [
 				"Python",
-				"PLC ST",
-				"C"
+        "C",
+				"PLC ST"
 			],
 			"github": "https://github.com/USI-FMAA/clay_printing_controller",
 			"link": ""
@@ -74,7 +74,7 @@
 			"desc": "A web apllication with three.js for 3D animation and story board.",
 			"skills": [
 				"TypeScript",
-				"Nest.js"
+				"Next.js"
 			],
 			"github": "https://github.com/WeiTing1991/lalaBearPlayground",
 			"link": ""
@@ -117,6 +117,18 @@
 			"link": ""
 		},
 		{
+			"title": "Beyond Transparency",
+			"image": "/project/beyond_transparency/featured.jpg",
+			"md":"/project/beyond_transparency/index.md",
+			"desc": "A study on Robotically Enhanced Glass Architecture",
+			"skills": [
+				"Python",
+				"UR Script"
+			],
+			"github": "https://github.com/WeiTing1991/imprint-concrete",
+			"link": "https://dbt.arch.ethz.ch/project/beyond-transparency/"
+		},
+		{
 			"title": "Intutive Robotic Plastering",
 			"image": "/project/robotic_plastering/featured.jpg",
 			"md":"/project/robotic_plastering/index.md",
@@ -129,18 +141,6 @@
 			],
 			"github": "https://github.com/WeiTing1991/imprint-concrete",
 			"link": "https://gramaziokohler.arch.ethz.ch/web/d/projekte/461.html"
-		},
-		{
-			"title": "Beyond Transparency",
-			"image": "/project/beyond_transparency/featured.jpg",
-			"md":"/project/beyond_transparency/index.md",
-			"desc": "A study on Robotically Enhanced Glass Architecture",
-			"skills": [
-				"Python",
-				"UR Script"
-			],
-			"github": "https://github.com/WeiTing1991/imprint-concrete",
-			"link": "https://dbt.arch.ethz.ch/project/beyond-transparency/"
 		},
 		{
 			"title": "From Finding Geometry Workshop",

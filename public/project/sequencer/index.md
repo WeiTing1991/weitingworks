@@ -3,8 +3,7 @@
 
 A web-based application Sequencer for rebar cage assembly.
 
----
-## DEMO 
+--- 
 
 - Sequencer layout
 
@@ -22,6 +21,5 @@ A web-based application Sequencer for rebar cage assembly.
 
 ![alt text](/project/sequencer/seq4.png)  
 
-## More information coming soon!
 
 
