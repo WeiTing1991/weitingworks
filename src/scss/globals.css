@@ -1,8 +1,9 @@
 /* @import "tailwindcss"; */
 /* @import "tailwindcss/typography"; */
 
+/* Dark mode variables (Rose Pine) */
 :root {
-  /* Dark mode variables (Rose Pine) */
+  --current-theme: dark;
   --navy-shadow: rgba(22, 20, 31, 0.7);
   --background-color: #191724;
   --lightest-navy: #403c58;
@@ -16,19 +17,18 @@
 }
 
 /* Light mode variables (Rose Pine Dawn) */
-[data-theme='light'] {
-  :root {
-    --navy-shadow: rgba(242, 237, 236, 0.7);
-    --background-color: #faf4ed;
-    --lightest-navy: #f2e9e1;
-    --light-navy: #ece3db;
-    --dark-slate: #9893a5;
-    --slate: #797593;
-    --light-slate: #575279;
-    --lightest-slate: #907aa9;
-    --theme-color: #d7827e;
-    --white: #ffffff;
-  }
+:root.light {
+  --current-theme: light;
+  --navy-shadow: rgba(242, 237, 236, 0.7);
+  --background-color: #faf4ed;
+  --lightest-navy: #f2e9e1;
+  --light-navy: #ece3db;
+  --dark-slate: #9893a5;
+  --slate: #797593;
+  --light-slate: #575279;
+  --lightest-slate: #907aa9;
+  --theme-color: #d7827e;
+  --white: #ffffff;
 }
 
 ::-moz-selection {
@@ -47,6 +47,14 @@ body {
 }
 
 body {
+  color-scheme: var(--current-theme);
+  background-color: var(--background-color);
+  counter-reset: title;
+  z-index: 99;
+}
+
+:root.light body {
+  color-scheme: var(--current-theme);
   background-color: var(--background-color);
   counter-reset: title;
   z-index: 99;

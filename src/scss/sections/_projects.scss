@@ -7,7 +7,7 @@
     position: relative;
 
     h2 {
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
       font-size: var(--tx2large);
       font-weight: 700;
 
@@ -16,6 +16,7 @@
         // content: "0" counter(title) ".";
         margin-right: 0.5rem;
         color: var(--theme-color);
+        margin-bottom: auto;
       }
 
       &::after {

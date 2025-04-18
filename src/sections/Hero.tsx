@@ -50,8 +50,8 @@ function Hero() {
 					delay: 1.35,
 				}}
 			>
-				I am a Software Developer with diverse experience in robotics,
-				architecture, and automation. I am passionate about exploring emerging
+				I am a Software Engineer with diverse experience in robotics,
+				architecture, automation, and web. I am passionate about exploring emerging
 				technologies and designing innovative, impactful solutions.
 			</motion.p>
 

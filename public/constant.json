@@ -5,16 +5,13 @@
       "position": [
         {
           "link": "https://github.com/Mesh-ch",
-          "title": "Software Developer",
+          "title": "Software Engineer",
           "group": "",
           "duration": "Jan 2025 - Present",
           "skill": [
-            "Typescript | Python | Docker"
+            "Python| TypeSciprt| React | FastAPI | PLC"
           ],
           "desc": [
-            "Developping a full-stack web application for end-to-end simulation of rebar cage sequencing, enabling efficient rebar planing simulation for the robot engineering corporation with a compact team.",
-            "Designed and built a conversion pipeline to transform IFC (Industry Foundation Classes) files into OBJ and IFC JSON formats, improving data interoperability and visualization.",
-            "Developping web-based AR applications for guided rebar assembly, delivering interactive instructions that introduce a new workflow and enhanced user operational efficiency."
           ]
         }
       ]
@@ -30,12 +27,9 @@
           ],
           "duration": "Jan 2025 - Present",
           "skill": [
-            "Typescript | Python | PLC ST | C"
+            "Python| C#| TypeScript| PLC| Protobuf| ABB Roobt"
           ],
           "desc": [
-            "Building a protocol via gRPC library for migrating Unity-based XR library.",
-            "Enhanced the robotic fabrication library by adding new features, optimizing performance, and improving usability.",
-            ""
           ]
         },
         {
@@ -46,11 +40,9 @@
           ],
           "duration": "Aug 2022 - Mar 2025",
           "skill": [
-            "C/C++ | Python | PLC ST | ABB Robot | UR Robot | Docker | CI/CD"
+            "C/C++| PLC ST| ABB Robot| UR Robot| Docker| CI/CD"
           ],
           "desc": [
-            "Designed and integrated software and hardware solutions for cutting-edge projects, including robotic clay printing and a concrete roller blend printing machine, advancing additive manufacturing research.",
-            "Developed and delivered a desktop control application for a robotic concrete casting system, enabling user interface for control and contributing to a 25% improvement in production efficiency."
           ]
         }
       ]
@@ -64,15 +56,9 @@
           "duration": "Aug 2023 - Dec 2024",
           "group": "FMAA |",
           "skill": [
-            "Python | C/C++ | PLC ST | ABB Robot | Docker | GitHub CI/CD | Fusion 360"
+            "Python | C/C++ | C# | ABB Robot | PLC | GitHub CI/CD | Fusion 360 | MongoDB | FastAPI"
           ],
           "desc": [
-            "Spearheading the development of a Robotic Concrete Casting System application from conception to delivery as a full-stack software developer.",
-            "Engineering and implementing programs facilitating seamless communication between the robotic arm, PLC controller, and user interface client.",
-            "Elevated the robustness of the overall control system by 50% through the design and implementation of a real-time feedback controlling and a comprehensive data recording processing system, spanning from design to production for an innovative research project.",
-            "Led the implementation of a prototypical mechatronic processing setup for an Inline robotic system aligned with material processing, ensuring a stable and reliable system.",
-            "Collaborated as a project engineer with a team of academic researchers and an industrial partner to implement new features and enhancements, enhancing the performance and capacity of the casting system by 30%.",
-            ""
           ]
         },
         {
@@ -96,10 +82,9 @@
           "group": "",
           "duration": "Sep 2019 - Sep 2020",
           "skill": [
-            "Python | Java | Rhino&Grasshopper | UR Robot"
+            "Python | Java | Rhino&Grasshopper | UR Robot | KUKA Robot"
           ],
           "desc": [
-            "Designed and implemented a 3D Robotic Printing system capable of utilizing both filament and granular materials, with a primary focus on non-planar printing geometry; Provided technical and manufacturing support at TKU Digital and Robotic Fabrication Factory, guiding bachelor's, master's, and PhD students while overseeing operations."
           ]
         }
       ]
@@ -116,55 +101,42 @@
             "C/C++ | Python | ArchiCAD | Rhino&Grasshopper"
           ],
           "desc": [
-            "Successfully executed multiple projects as a software developer, measuring achievement through the implementation of geometric optimization and analysis programs for Building Information Modeling (BIM) software."
           ]
         }
       ]
     }
   ],
-
-  "recenTechnologies": [
-    "Python",
-    "TypeScript",
-    "Lua",
-    "C",
-    "React.js",
-    "Node/Bun/Next",
-    "Docker",
-    "Github Actions",
-    "Bash",
-    "C++",
-    "MongoDB",
-    "SQL"
-  ],
-  "otherTech": [
-    "Tauri",
-    "Go",
-    "Next.js"
-  ],
   "skills": {
     "language": [
-      "Javascript (ES6+)",
-      "TypeScript"
+      "Python",
+      "C#",
+      "Lua",
+      "TypeScript",
+      "C/C++"
+      ],
+    "backEnd": [
+      "FastAPI",
+      "MongoDb",
+      "SQL",
+      ".Net",
+      "Bash",
+      "Docker",
+      "Node/Bun",
+      "CI/CD(Github Actions)"
     ],
     "frontEnd": [
       "React.js",
-      "React Native",
-      "Next.js"
+      "Three.js",
+      "webXR.js"
     ],
-    "backEnd": [
-      "Node.js",
-      "Express.js",
-      "Firebase",
-      "MongoDb"
+    "industrial": [
+      "ABB Rapid",
+      "PLC ST",
+      "Profinet"
     ],
-    "uiFramework": [
-      "Ant Design",
-      "Material Ui",
-      "Gsap",
-      "Framer motion",
-      "Tailwind Css",
-      "Sass"
+    "new": [
+      "Go",
+      "Flutter"
     ]
   }
 }

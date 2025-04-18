@@ -1,7 +1,7 @@
 import "@/scss/globals.css";
 import "@/scss/index.scss";
 import type { AppProps } from "next/app";
-import { ThemeProvider, useTheme } from "@/provider/ThemeContext";
+import { ThemeContextProvider} from "@/provider/ThemeContext";
 import { Source_Sans_3, Roboto_Mono } from "next/font/google";
 
 const sourceSans = Source_Sans_3({ subsets: ["latin"] });
@@ -11,9 +11,7 @@ const robotoMono = Roboto_Mono({
 });
 
 // Define MainApp as a separate component to use hooks
-const MainApp: React.FC<AppProps> = ({ Component, pageProps, router }) => {
-	const { theme } = useTheme();
-
+const MainLayout: React.FC<React.PropsWithChildren<{}>> = ({children}) => {
 	return (
 		<>
 			{/* Global font variables */}
@@ -24,8 +22,8 @@ const MainApp: React.FC<AppProps> = ({ Component, pageProps, router }) => {
         }
       `}</style>
 
-			<div data-theme={theme}>
-				<Component {...pageProps} />
+			<div>
+        {children}
 			</div>
 		</>
 	);
@@ -33,9 +31,11 @@ const MainApp: React.FC<AppProps> = ({ Component, pageProps, router }) => {
 
 function MyApp({ Component, pageProps, router }: AppProps) {
 	return (
-		<ThemeProvider>
-			<MainApp Component={Component} pageProps={pageProps} router={router} />
-		</ThemeProvider>
+		<ThemeContextProvider>
+      <MainLayout>
+        <Component {...pageProps} key={router.asPath} />
+      </MainLayout>
+		</ThemeContextProvider>
 	);
 }
 

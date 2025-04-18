@@ -8,6 +8,7 @@ import Experience from "@/sections/Experience";
 import Hero from "@/sections/Hero";
 import Navbar from "@/sections/Navbar";
 import Head from "next/head";
+import Projects from "@/sections/Projects";
 import { useState } from "react";
 
 
@@ -32,11 +33,12 @@ function Home() {
 					<SocialIcons />
 					<BackHome />
 					<main>
-						{/* <CustomParticles /> */}
 						<Hero />
 						<About />
 						<Experience />
+            <Projects />
 						<Contact />
+						{/* <CustomParticles /> */}
 					</main>
 					{/* <Footer /> */}
 				</>
