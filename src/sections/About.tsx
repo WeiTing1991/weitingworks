@@ -35,13 +35,12 @@ function About() {
             Hi, I am a <strong>software engineer and researcher</strong> based
             in Zurich, specializing in the fields of software development,
             robotics, and automation, with combining my background in
-            architecture and computer science.
+            computer science and architecture.
           </p>
           <p className="about-grid-info-text">
             In the past few year, I have worked as a project consultant,
-            software developer, and researcher in both industrial and academic
-            areas over the past years, especially in the domain of research
-            development, robotic, digital fabrication, and automation
+            software engineer, and researcher in both industrial and academic
+            areas, especially in the domain of research development, robotic, digital fabrication, and automation
             manufacturing.
           </p>
           <p className="about-grid-info-text">
@@ -75,7 +74,7 @@ function About() {
           </p>
 
           <p className="about-grid-info-text">
-            Currently, I work as a scientific researcher at{" "}
+            Currently, I work at{" "}
             <Link
               href="https://dfab.ch/people/weiting-chen"
               className="link"
@@ -83,29 +82,14 @@ function About() {
             >
               Gramazio Kohler Research{" "}
             </Link>{" "}
-            and a software engineer at{" "}
-            <Link
-              href="https://github.com/Mesh-ch"
-              className="link"
-              target="_blank"
-            >
-              MESH AG.
-            </Link>{" "}
-            and I am also a github maintainer of{" "}
-            <Link
-              href=" https://github.com/USI-FMAA "
-              className="link"
-              target="_blank"
-            >
-              USI-FMAA.
-            </Link>{" "}
+            for software development in open-source libraries and tools for AEC field.
             <br />
             <br />
             Besides work, I love exploring new technologies and tools, lifting,
             and reading.
           </p>
         </div>
-        <div className="about-grid-info">
+        {/* <div className="about-grid-info">
           <p className="about-grid-info-text">Tech Stack:</p>
           <p className="about-grid-info-subtext">Language:</p>
           <ul className="about-grid-info-list">
@@ -163,7 +147,7 @@ function About() {
               );
             })}
           </ul>
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );

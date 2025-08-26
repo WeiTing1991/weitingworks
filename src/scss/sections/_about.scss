@@ -1,5 +1,7 @@
 .about {
-  margin: 15rem 0;
+  margin: 30rem 0;
+  margin-bottom: 100rem;
+  padding-top: 100px;
   .title {
     font-family: var(--raleway);
     color: var(--lightest-slate);
@@ -8,12 +10,14 @@
       margin-bottom: 2rem;
       font-size: var(--tx2large);
       font-weight: 700;
+
       &::before {
-        counter-increment: title;
-        // content: "0" counter(title) ".";
+        // counter-increment: title;
+        content:(title) ".";
         margin-right: 0.5rem;
         color: var(--theme-color);
       }
+
       &::after {
         content: "";
         display: block;
@@ -21,7 +25,7 @@
         top: 20px;
         width: 300px;
         height: 2px;
-        margin-left: 220px;
+        margin-left: 200px;
         background-color: var(--lightest-navy);
       }
     }

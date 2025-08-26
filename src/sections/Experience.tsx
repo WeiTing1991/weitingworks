@@ -1,15 +1,15 @@
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import constant from "../../public/constant.json";
-import Button from "@/components/Button";
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import constant from '../../public/constant.json';
+import Button from '@/components/Button';
 
 function Experience() {
   const [selected, setSelected] = useState(0);
 
   useEffect(() => {
     const transformSelected = () => {
-      const underline = document?.querySelector<HTMLElement>(".underline");
+      const underline = document?.querySelector<HTMLElement>('.underline');
       underline!.style.top = `${selected * 3}rem`;
     };
     transformSelected();
@@ -34,16 +34,14 @@ function Experience() {
       <div className="container">
         <ul className="exp-slider">
           <div className="underline"></div>
-          {constant.experiences.map((expereince, index) => {
+          {constant.experiences.map((experience, index) => {
             return (
               <li
-                className={`exp-slider-item ${
-                  index === selected && "exp-slider-item-selected"
-                }`}
+                className={`exp-slider-item ${index === selected && 'exp-slider-item-selected'}`}
                 onClick={() => setSelected(index)}
                 key={index}
               >
-                <span>{expereince.company}</span>
+                <span>{experience.company}</span>
               </li>
             );
           })}
@@ -57,11 +55,7 @@ function Experience() {
                     <span>{position.title}</span>
                     <span className="exp-details-position-company">
                       &nbsp;@&nbsp;
-                      <Link
-                        href={position.link}
-                        className="link"
-                        target="_blank"
-                      >
+                      <Link href={position.link} className="link" target="_blank">
                         {position?.group}
                         &nbsp;
                         {constant.experiences[selected].company}
@@ -69,7 +63,13 @@ function Experience() {
                     </span>
                   </h3>
                   <p className="exp-details-range">{position.duration}</p>
-                  <p className="exp-details-item">{position.skill}</p>
+                  <div className="exp-details-skills">
+                    {position.skill[0].split("|").map((skill, skillIndex) => (
+                      <span key={skillIndex} className="skill-tag">
+                        {skill.trim()}
+                      </span>
+                    ))}
+                  </div>
                   <ul className="exp-details-list">
                     {position.desc.map((desc, index) => {
                       return (

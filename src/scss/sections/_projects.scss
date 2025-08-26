@@ -1,5 +1,7 @@
 .projects {
-  margin: 15rem 0;
+  margin: 30rem 0;
+  margin-bottom: 100rem;
+  padding-top: 100px;
 
   .title {
     font-family: var(--raleway);
@@ -12,8 +14,7 @@
       font-weight: 700;
 
       &::before {
-        counter-increment: title;
-        // content: "0" counter(title) ".";
+        content: (title) ".";
         margin-right: 0.5rem;
         color: var(--theme-color);
         margin-bottom: auto;
@@ -26,7 +27,7 @@
         top: 20px;
         width: 300px;
         height: 2px;
-        margin-left: 420px;
+        margin-left: 320px;
         background-color: var(--lightest-navy);
       }
     }

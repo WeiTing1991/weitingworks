@@ -1,80 +1,80 @@
 {
   "experiences": [
     {
+      "company": "ETH Zurich",
+      "position": [
+        {
+          "link": "https://github.com/gramaziokohler",
+          "group": "Gramazio Kohler Research | ",
+          "title": [
+            "Software Engineer"
+          ],
+          "duration": "Jan 2025 - Present",
+          "skill": [
+            "C++| Python| C#| CMake| Protobuf"
+          ],
+          "desc": [
+            "Developing compas_pb for seamless integration of Protobuf with COMPAS framework, enhancing data serialization from Python to C++ and C#.",
+            "Developing Archicad plugin using C++ for BIM workflows between Revit, CADWork and Archicad, enhancing efficiency for Timber Construction processes and architectural design."
+          ]
+        }
+      ]
+    },
+    {
       "company": "MESH AG",
       "position": [
         {
           "link": "https://github.com/Mesh-ch",
           "title": "Software Engineer",
           "group": "",
-          "duration": "Jan 2025 - Present",
+          "duration": "Jan 2025 - Jun 2025",
           "skill": [
-            "Python| TypeSciprt| React | FastAPI | PLC"
+            "Python| TypeScript| React.js| Three.js| FastAPI| PostgreSQL| Docker| Auzre| ABB Robot| Beckhoff PLC"
           ],
           "desc": [
+            "Rebar AR web app: Building 3D rebar assembly visualization AR app by using React, ThreeJS, WebXR, FastAPI, and IfcOpenShell, delivering a proof-of-concept for enhancing on-site user efficiency.",
+            "Backend API Development: Developing rebar cage sequencing simulation app with compact team, covering full-stack development from backend API, Dockerization to frontend UI to support efficient robotic placement planning",
+            "Enhanced Control Interfaces: Enhanced web UIs for controlling and visualizing robotic cell tying systems",
+            "PLC-Robot Integration: Integrated EtherCAT and Profinet protocols between Beckhoff PLCs and ABB robots to enable seamless industrial automation control."
           ]
         }
       ]
     },
     {
-      "company": "ETH Zurich",
-      "position": [
-        {
-          "link": "https://github.com/compas-dev",
-          "group": "GRK |",
-          "title": [
-            "Scientific Researcher"
-          ],
-          "duration": "Jan 2025 - Present",
-          "skill": [
-            "Python| C#| TypeScript| PLC| Protobuf| ABB Roobt"
-          ],
-          "desc": [
-          ]
-        },
-        {
-          "link": "https://github.com/USI-FMAA",
-          "group": "PCPM |",
-          "title": [
-            "Scientific Collaborator"
-          ],
-          "duration": "Aug 2022 - Mar 2025",
-          "skill": [
-            "C/C++| PLC ST| ABB Robot| UR Robot| Docker| CI/CD"
-          ],
-          "desc": [
-          ]
-        }
-      ]
-    },
-    {
-      "company": "USI",
+      "company": "Università della Svizzera italiana",
       "position": [
         {
           "link": "https://github.com/USI-FMAA",
           "title": "Senior Scientific Collaborator",
           "duration": "Aug 2023 - Dec 2024",
-          "group": "FMAA |",
+          "group": "Fabrication & Material-Aware Architecture |",
           "skill": [
-            "Python | C/C++ | C# | ABB Robot | PLC | GitHub CI/CD | Fusion 360 | MongoDB | FastAPI"
+            "Python | C/C++ | C# | ABB Robot | PLC ST | GitHub CI/CD | Fusion 360 | MongoDB "
           ],
           "desc": [
+            "Industry Software/Hardware Integration: Collaborated as software engineer with a multidisciplinary team of academic researchers and industrial partner (MUELLER Steinag AG), developing a digital casting system with ABB robotics for industrial proof-of-concept. Enhanced casting systems, resulting in 30% throughput improvement through optimized processes.",
+            "Real-time Control System: Architected feedback loops and data pipelines for industrial automation, improving system reliability by 50% through continuous monitoring and adjustment.",
+            "Modular Robotics library: Created modular Python package bridging Beckhoff PLCs with ABB robots for material experimentation with dockerization, CI/CD, database, and API integration.",
+            "Multi-Protocol Integration: Engineered EtherCAT/Profinet communication between ABB IRB 4600 and Beckhoff PLCs using RAPID/ST/C.",
+            "UI Development: Built intuitive FlexPendant interface with ABB PC SDK and C# for streamlining operator workflows and reducing training requirements.",
+            "Mechatronic System and Prototype: Developed prototype for inline robotic material processing with reliable performance across production scenarios."
           ]
         },
         {
           "link": "",
           "title": "Scientific Collaborator",
           "duration": "Aug 2022 - Dec 2023",
-          "group": "FMAA |",
+          "group": "Fabrication & Material-Aware Architecture |",
           "skill": [
             "Python | C/C++ | PLC ST | ABB Robot"
           ],
-          "desc": []
+          "desc": [
+          ]
         }
       ]
     },
     {
-      "company": "TKU",
+      "company": "Tamkang University",
       "position": [
         {
           "link": "",
@@ -82,9 +82,11 @@
           "group": "",
           "duration": "Sep 2019 - Sep 2020",
           "skill": [
-            "Python | Java | Rhino&Grasshopper | UR Robot | KUKA Robot"
+            "Python | C/C++ | Rhino&Grasshopper | UR Robot | KUKA Robot"
           ],
           "desc": [
+            "Advanced 3D Printing Systems: Designed and implemented a 3D robotic printing system for filament and granular materials, specializing in non-planar geometry printing.",
+            "Academic Technical Leadership: Provided manufacturing support and technical guidance to bachelor's, master's, and PhD students while overseeing operations at TKU Digital and Robotic Fabrication Factory."
           ]
         }
       ]
@@ -98,9 +100,10 @@
           "group": "",
           "duration": "Jan 2019 - Aug 2019",
           "skill": [
-            "C/C++ | Python | ArchiCAD | Rhino&Grasshopper"
+            "C++ | Python | ArchiCAD | Rhino&Grasshopper"
           ],
           "desc": [
+            "BIM Software Development: Successfully executed multiple projects developing geometric optimization and analysis programs for Building Information Modeling platforms (ArchiCAD), delivering measurable improvements to modeling workflows."
           ]
         }
       ]
@@ -113,7 +116,7 @@
       "Lua",
       "TypeScript",
       "C/C++"
-      ],
+    ],
     "backEnd": [
       "FastAPI",
       "MongoDb",

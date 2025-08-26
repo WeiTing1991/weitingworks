@@ -39,7 +39,7 @@ nav {
       display: none;
       color: var(--theme-color);
       font-size: var(--tlarge2);
-      justify-content: center;
+      justify-content: left;
       align-items: center;
       transition: 0.3s ease-in-out;
       z-index: 15;
@@ -66,6 +66,7 @@ nav {
       font-weight: 700;
       font-size: var(--tmeduim);
       counter-reset: nav-list;
+      margin-left: 50%;
 
       &-list {
         display: flex;
@@ -136,7 +137,7 @@ nav {
   }
 
   .blur-nav {
-    height: 80px;
+    height: 60px;
     position: fixed;
     top: 0;
     transition: 0.3s ease-in-out;
