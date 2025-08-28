@@ -1,6 +1,18 @@
 {
 	"projects": [
 		{
+			"title": "COMPAS Protobuf",
+			"image": "/project/compas_pb/featured.jpg",
+			"md":"/project/compas_pb/index.md",
+			"desc": "A COMPAS extension which lets you serialize and deserialize COMPAS Data types using protobuf.",
+			"skills": [
+				"Python",
+        "Protobuf"
+			],
+			"github": "https://github.com/gramaziokohler/compas_pb",
+			"link": ""
+		},
+		{
 			"title": "Casting Control App",
 			"image": "/project/casting_app/featured.jpg",
 			"md":"/project/casting_app/index.md",
@@ -14,17 +26,20 @@
 			"link": ""
 		},
 		{
-			"title": "Sequencer",
+			"title": "XR Rebar Sequencer",
 			"image": "/project/sequencer/featured.jpg",
 			"md":"/project/sequencer/index.md",
-			"desc": "A web application serves as sequencer for rebar cage assembly.",
+			"desc": "A web application serves as sequencer for rebar cage assembly with augmented reality (AR) visualization.",
 			"skills": [
-				"TypeScript",
 				"Python",
-				"Docker"
+				"TypeScript",
+        "React.js",
+        "Three.js",
+        "Azure",
+        "WebXR"
 			],
 			"github": "https://github.com/Mesh-ch/sequencer",
-			"link": ""
+			"link": "https://mesh-web-xr-pi.vercel.app/"
 		},
 		{
 			"title": "Robotic Digital Casting",
@@ -40,6 +55,18 @@
 			],
 			"github": "https://github.com/USI-FMAA/digital_casting_system",
 			"link": "https://www.research-collection.ethz.ch/handle/20.500.11850/709797"
+		},
+		{
+			"title": "La La Bear",
+			"image": "/project/lala_bear/featured.png",
+			"md":"/project/lala_bear/index.md",
+			"desc": "A web apllication with three.js for 3D animation and story board.",
+			"skills": [
+				"TypeScript",
+				"Next.js"
+			],
+			"github": "https://github.com/WeiTing1991/lalaBearPlayground",
+			"link": ""
 		},
 		{
 			"title": "Robotic Casting Controller",
@@ -65,18 +92,6 @@
 				"PLC ST"
 			],
 			"github": "https://github.com/USI-FMAA/clay_printing_controller",
-			"link": ""
-		},
-		{
-			"title": "La La Bear",
-			"image": "/project/lala_bear/featured.png",
-			"md":"/project/lala_bear/index.md",
-			"desc": "A web apllication with three.js for 3D animation and story board.",
-			"skills": [
-				"TypeScript",
-				"Next.js"
-			],
-			"github": "https://github.com/WeiTing1991/lalaBearPlayground",
 			"link": ""
 		},
 		{
