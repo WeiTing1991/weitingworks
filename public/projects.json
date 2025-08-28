@@ -60,7 +60,7 @@
 			"title": "La La Bear",
 			"image": "/project/lala_bear/featured.png",
 			"md":"/project/lala_bear/index.md",
-			"desc": "A web apllication with three.js for 3D animation and story board.",
+			"desc": "A web application with three.js for 3D animation and story board.",
 			"skills": [
 				"TypeScript",
 				"Next.js"
@@ -72,7 +72,7 @@
 			"title": "Robotic Casting Controller",
 			"image": "/project/casting_controller/featured.png",
 			"md":"/project/casting_controller/index.md",
-			"desc": "This project is the submoudle of Digital Casting System for PLC controller and ABB robot.",
+			"desc": "This project is the submodule of Digital Casting System for PLC controller and ABB robot.",
 			"skills": [
 				"Python",
 				"PLC ST",
@@ -120,7 +120,7 @@
 			"link": "https://www.goldenpin.org.tw/goldenpin/en"
 		},
 		{
-			"title": "Eral Exhibiation Center",
+			"title": "Eral Exhibition Center",
 			"image": "/project/roof_surface/featured.jpg",
 			"md":"/project/roof_surface/index.md",
 			"desc": " Geometrical analysis & optimization and architectural design ",
@@ -144,7 +144,7 @@
 			"link": "https://dbt.arch.ethz.ch/project/beyond-transparency/"
 		},
 		{
-			"title": "Intutive Robotic Plastering",
+			"title": "Intuitive Robotic Plastering",
 			"image": "/project/robotic_plastering/featured.jpg",
 			"md":"/project/robotic_plastering/index.md",
 			"desc": "A study on glass inlays for Robotic 3D Concrete Printing and Placing",
