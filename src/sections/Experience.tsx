@@ -1,19 +1,11 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import constant from '../../public/constant.json';
 import Button from '@/components/Button';
 
 function Experience() {
   const [selected, setSelected] = useState(0);
-
-  useEffect(() => {
-    const transformSelected = () => {
-      const underline = document?.querySelector<HTMLElement>('.underline');
-      underline!.style.top = `${selected * 3}rem`;
-    };
-    transformSelected();
-  }, [selected]);
 
   return (
     <motion.div
@@ -24,8 +16,8 @@ function Experience() {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
       variants={{
-        visible: { opacity: 1, y: 150 },
-        hidden: { opacity: 0, y: 0 },
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 60 },
       }}
     >
       <div className="title">
@@ -33,7 +25,10 @@ function Experience() {
       </div>
       <div className="container">
         <ul className="exp-slider">
-          <div className="underline"></div>
+          <div
+            className="underline"
+            style={{ transform: `translateY(${selected * 3}rem)` }}
+          ></div>
           {constant.experiences.map((experience, index) => {
             return (
               <li

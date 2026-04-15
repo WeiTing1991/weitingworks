@@ -127,8 +127,11 @@
         img {
           z-index: 0;
           filter: grayscale(100%);
-          transition: 0.3s ease-in-out;
+          transition: filter 0.3s ease-in-out;
           border-radius: 0.2rem;
+          will-change: filter;
+          transform: translateZ(0);
+          backface-visibility: hidden;
         }
       }
     }

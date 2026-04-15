@@ -7,33 +7,36 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import ThemeIcon from "@/components/ThemeIcon";
 
 function Navbar() {
-  const [navbarVisible, setNavbarVisible] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [responsiveNavVisible, setResponsiveNavVisible] = useState(false);
   const sectionLinks = [
     { name: "About", link: "/#about" },
     { name: "Experience", link: "/#experience" },
     { name: "Projects", link: "/#project" },
+    { name: "Blog", link: "/blog", external: false },
     { name: "Contact", link: "/#contact" },
   ];
 
   useEffect(() => {
-    let lastScrollTop = 0;
-    window.addEventListener(
-      "scroll",
-      function () {
-        let scrollTop =
+    let ticking = false;
+
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        const scrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop) {
-          setNavbarVisible(false);
-          console.log("Scrolling down");
-        } else {
-          setNavbarVisible(true);
-          console.log("Scrolling up");
-        }
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-      },
-      false
-    );
+        setScrolled((prev) => {
+          const next = scrollTop > 20;
+          return next === prev ? prev : next;
+        });
+        ticking = false;
+      });
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   useEffect(() => {
@@ -62,7 +65,7 @@ function Navbar() {
 
   return (
     <nav>
-      <div className={`wrapper ${navbarVisible ? "blur-nav" : ""}`}>
+      <div className={`wrapper ${scrolled ? "blur-nav" : ""}`}>
         <motion.div
           className="brand"
           initial={{ opacity: 0 }}
@@ -105,7 +108,7 @@ function Navbar() {
           className={`${responsiveNavVisible && "nav-responsive"} nav-items`}
         >
           <ul className="nav-items-list">
-            {sectionLinks.map(({ name, link }, index) => (
+            {sectionLinks.map(({ name, link, external }, index) => (
               <motion.li
                 key={name}
                 className="nav-items-list-item"
@@ -117,9 +120,20 @@ function Navbar() {
                   delay: 0.3 + index * 0.1,
                 }}
               >
-                <Link href={link} className="nav-items-list-item-link">
-                  {name.toUpperCase()}
-                </Link>
+                {external ? (
+                  <a
+                    href={link}
+                    className="nav-items-list-item-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {name.toUpperCase()}
+                  </a>
+                ) : (
+                  <Link href={link} className="nav-items-list-item-link">
+                    {name.toUpperCase()}
+                  </Link>
+                )}
               </motion.li>
             ))}
           </ul>

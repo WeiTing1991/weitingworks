@@ -1,6 +1,5 @@
 .projects {
-  margin: 30rem 0;
-  margin-bottom: 100rem;
+  margin: 8rem 0 4rem;
   padding-top: 100px;
 
   .title {
@@ -42,6 +41,8 @@
       position: relative;
       display: flex;
       justify-content: flex-end;
+      min-height: 400px;
+      align-items: center;
 
       &-image {
         &-container {
@@ -84,7 +85,10 @@
         img {
           z-index: 0;
           filter: grayscale(100%);
-          transition: 0.3s ease-in-out;
+          transition: filter 0.3s ease-in-out;
+          will-change: filter;
+          transform: translateZ(0);
+          backface-visibility: hidden;
         }
       }
 
@@ -134,15 +138,16 @@
           &-item {
             color: var(--light-slate);
             font-family: var(--raleway);
-            background-color: var(--slate);
-            padding: 0.2rem 0.5rem;
+            background-color: var(--lightest-navy);
+            padding: 0.3rem 0.75rem;
             border-radius: 20px;
-            border: 0.2px solid var(--slate);
+            border: 1px solid var(--slate);
             font-size: var(--tsm1);
+            transition: border-color 0.2s ease, color 0.2s ease;
 
             &:hover {
-              border: 0.2px solid var(--theme-color);
-              // background-color: var(--theme-color);
+              border-color: var(--theme-color);
+              color: var(--theme-color);
             }
           }
         }

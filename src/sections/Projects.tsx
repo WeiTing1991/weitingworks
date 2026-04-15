@@ -18,8 +18,8 @@ function Projects() {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
       variants={{
-        visible: { opacity: 1, y: 150 },
-        hidden: { opacity: 0, y: 0 },
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 60 },
       }}
     >
       <div className="title">
@@ -37,8 +37,8 @@ function Projects() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
                 variants={{
-                  visible: { opacity: 1, y: -50 },
-                  hidden: { opacity: 0, y: 0 },
+                  visible: { opacity: 1, y: 0 },
+                  hidden: { opacity: 0, y: 40 },
                 }}
               >
                 <div className="project-image">

@@ -1,35 +1,36 @@
 nav {
-  min-height: 60px;
+  min-height: 5rem;
 
   .wrapper {
     width: 100%;
+    min-height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 4rem;
-    transition: 0.3s ease-in-out;
-    position: relative;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 
     .brand {
       a {
         color: var(--theme-color);
-        display: flex;
-        justify-content: center;
+        display: inline-flex;
         align-items: center;
         height: 3rem;
-        width: 3rem;
+        padding: 0 0.5rem;
         fill: none;
-        margin: 2rem 0;
         cursor: pointer;
         outline: 2px dashed transparent;
-        transition: 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out;
 
         &:hover {
           fill: #64fad91a;
         }
 
         &:focus {
-          // outline-color: var(--theme-color);
           fill: #64fad91a;
         }
       }
@@ -80,14 +81,13 @@ nav {
             text-decoration: none;
             color: inherit;
             transition: 0.3s ease-in-out;
-            // &::before {
-            //   counter-increment: nav-list;
-            //   content: "0" counter(nav-list) ". ";
-            //   color: var(--theme-color);
-            // }
           }
 
           a:focus {
+            outline-color: transparent;
+          }
+
+          a:focus-visible {
             outline-color: var(--theme-color);
           }
 
@@ -137,13 +137,11 @@ nav {
   }
 
   .blur-nav {
-    height: 60px;
-    position: fixed;
-    top: 0;
-    transition: 0.3s ease-in-out;
-    z-index: 100;
-    background-color: rgba(10, 25, 47, 0.85);
+    background-color: var(--nav-bg);
     box-shadow: 0 10px 30px -10px var(--navy-shadow);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    will-change: backdrop-filter;
+    transform: translateZ(0);
   }
 }

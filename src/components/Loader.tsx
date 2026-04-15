@@ -40,15 +40,14 @@ function Loader({ isLoading, setIsLoading }: any) {
 							animate={{
 								pathLength: 1,
 								opacity: 1,
-								rotate: 360,
+								rotate: isLoading ? 360 : 0,
 							}}
 							transition={{
 								duration: 1.5,
 								ease: "easeInOut",
-								repeat: Infinity,
 								rotate: {
 									duration: 2,
-									repeat: Infinity,
+									repeat: isLoading ? Infinity : 0,
 									ease: "linear",
 								},
 							}}

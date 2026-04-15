@@ -14,21 +14,23 @@
   --lightest-slate: #c4a7e7;
   --theme-color: #eb6f92;
   --white: #ffffff;
+  --nav-bg: rgba(25, 23, 36, 0.75);
 }
 
 /* Light mode variables (Rose Pine Dawn) */
 :root.light {
   --current-theme: light;
-  --navy-shadow: rgba(242, 237, 236, 0.7);
+  --navy-shadow: rgba(87, 82, 121, 0.12);
   --background-color: #faf4ed;
-  --lightest-navy: #f2e9e1;
-  --light-navy: #ece3db;
+  --lightest-navy: #fffaf3;
+  --light-navy: #f2e9e1;
   --dark-slate: #9893a5;
   --slate: #797593;
   --light-slate: #575279;
-  --lightest-slate: #907aa9;
-  --theme-color: #d7827e;
-  --white: #ffffff;
+  --lightest-slate: #1f1d2e;
+  --theme-color: #b4637a;
+  --white: #575279;
+  --nav-bg: rgba(250, 244, 237, 0.75);
 }
 
 ::-moz-selection {
@@ -44,6 +46,10 @@
 html,
 body {
   scroll-behavior: smooth !important;
+}
+
+html {
+  scroll-padding-top: 6rem;
 }
 
 body {

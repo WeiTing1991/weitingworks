@@ -18,16 +18,19 @@ function Contact() {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
       variants={{
-        visible: { opacity: 1, y: 150 },
-        hidden: { opacity: 0, y: 0 },
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 60 },
       }}
     >
-      <h2 className="contact-title"></h2>
+      <p className="contact-overline">What&apos;s Next?</p>
       <h2 className="contact-sub-title">Get In Touch</h2>
       <p className="contact-text">
+        I&apos;m currently open to new opportunities and collaborations.
+        Whether you have a question, a project in mind, or just want to say hi,
+        my inbox is always open.
       </p>
       <div className="contact-cta">
-        <Button link="mailto:weitingchen0502@gmail.com" text="Contact Me"></Button>
+        <Button link="mailto:weitingchen0502@gmail.com" text="Say Hello"></Button>
       </div>
     </motion.div>
   );
