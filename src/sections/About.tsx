@@ -1,18 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useRef } from "react";
-import { useInView, motion } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import constant from "../../public/constant.json";
 
 function About() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
-
-  useEffect(() => {
-    console.log("Element is in view: ", isInView);
-  }, [isInView]);
-
-
   return (
     <motion.div
       className="about"
@@ -22,8 +14,8 @@ function About() {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
       variants={{
-        visible: { opacity: 1, y: 150 },
-        hidden: { opacity: 0, y: 0 },
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 60 },
       }}
     >
       <div className="title">
@@ -32,25 +24,17 @@ function About() {
       <div className="about-grid">
         <div className="about-grid-info">
           <p className="about-grid-info-text">
-            Hi, I am a <strong>software engineer and researcher</strong> based
-            in Zurich, specializing in the fields of software development,
-            robotics, and automation, with combining my background in
-            computer science and architecture.
+            Hi, I am a <strong>software engineer </strong> based in Zurich, specializing in the fields of software
+            development, CAD/CAM, robotics, and automation.
           </p>
           <p className="about-grid-info-text">
-            In the past few year, I have worked as a project consultant,
-            software engineer, and researcher in both industrial and academic
-            areas, especially in the domain of research development, robotic, digital fabrication, and automation
-            manufacturing.
+            In the past few year, I have worked as a project consultant, software engineer, and researcher in both
+            industrial and academic areas, especially in the domain of research development, CAD/CAM, robotic, digital
+            fabrication, and manufacturing.
           </p>
           <p className="about-grid-info-text">
-            I bring variety and an interdisciplinary perspective to my work and
-            interests with a{" "}
-            <Link
-              href="https://masdfab.arch.ethz.ch/"
-              className="link"
-              target="_blank"
-            >
+            I bring variety and an interdisciplinary perspective to my work and interests with a{" "}
+            <Link href="https://masdfab.arch.ethz.ch/" className="link" target="_blank">
               MAS
             </Link>{" "}
             in Robotics & Digital Fabrication from ETH Zürich, a{" "}
@@ -62,31 +46,21 @@ function About() {
               MSc in Computer Science{" "}
             </Link>{" "}
             at University of Bath, and a{" "}
-            <Link
-              href="https://www.facebook.com/digitalaieou"
-              className="link"
-              target="_blank"
-            >
+            <Link href="https://www.facebook.com/digitalaieou" className="link" target="_blank">
               Bachelor of Architecture{" "}
             </Link>{" "}
-            from Tamkang University under the group of Architecture & Digital
-            Fabrication Digital & Robotic Fabrication LAB.
+            from Tamkang University under the group of Architecture & Digital Fabrication Digital & Robotic Fabrication
+            LAB.
           </p>
-
           <p className="about-grid-info-text">
-            Currently, I work at{" "}
-            <Link
-              href="https://dfab.ch/people/weiting-chen"
-              className="link"
-              target="_blank"
-            >
-              Gramazio Kohler Research{" "}
+            Currently, I work as Software Engineer at {" "}
+            <Link href="https://www.manukai.ch/" className="link" target="_blank">
+              Manukai AG{" "}
             </Link>{" "}
-            for software development in open-source libraries and tools for AEC field.
+            for AI applications with CAD/CAM software.
             <br />
             <br />
-            Besides work, I love exploring new technologies and tools, lifting,
-            and reading.
+            Besides work, I love exploring new technologies and tools, lifting, and reading.
           </p>
         </div>
         {/* <div className="about-grid-info">

@@ -1,6 +1,24 @@
 {
   "experiences": [
     {
+      "company": "Manukai AG",
+      "position": [
+        {
+          "link": "https://www.manukai.ch/",
+          "group": "",
+          "title": [
+            "Software Engineer"
+          ],
+          "duration": "Jan 2026 - Present",
+          "skill": [
+            "C#| C++| Python"
+          ],
+          "desc": []
+        }
+      ]
+    },
+
+    {
       "company": "ETH Zurich",
       "position": [
         {
@@ -9,7 +27,7 @@
           "title": [
             "Software Engineer"
           ],
-          "duration": "Jan 2025 - Present",
+          "duration": "Jan 2025 - Dec 2025",
           "skill": [
             "C++| Python| C#| CMake| Protobuf"
           ],
