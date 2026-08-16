@@ -135,9 +135,12 @@ export default function About({ about, links, experiences, skills }: AboutProps)
           transition: "opacity 0.6s ease-out, transform 0.6s ease-out",
         }}
       >
-        <p className="text-[var(--color-text)] text-lg md:text-xl leading-relaxed">
-          Software Engineer based in Switzerland. With several years of experience in <span className="text-[var(--color-foam)]">Computer Geometry</span>, <span className="text-[var(--color-foam)]">CAD/CAM</span>, <span className="text-[var(--color-foam)]">Robotics</span>, <span className="text-[var(--color-foam)]">Desktop/Web Apps</span>, and <span className="text-[var(--color-foam)]">Machine Learning</span>. In my free time, I like contributing to open source projects and building my muscle at the gym.
-        </p>
+        <div className="font-[family-name:var(--font-mono)] text-sm md:text-base text-[var(--color-subtle)] space-y-1">
+          <p><span className="text-[var(--color-text)]">Software Engineer</span> based in <span className="text-[var(--color-gold)]">Switzerland</span></p>
+          <p><span className="text-[var(--color-muted)]">BArch</span> | <span className="text-[var(--color-muted)]">MSc Computer Science</span> | <span className="text-[var(--color-muted)]">MAS Robotics Fabrication</span></p>
+          <br />
+          <p>With several years of experience in <span className="text-[var(--color-foam)]">Computer Geometry</span>, <span className="text-[var(--color-foam)]">CAD/CAM</span>, <span className="text-[var(--color-foam)]">Robotics</span>, <span className="text-[var(--color-foam)]">Desktop/Web Apps</span>, and <span className="text-[var(--color-foam)]">Machine Learning</span>. In my free time, I like contributing to open source projects and building my muscle at the gym.</p>
+        </div>
       </section>
 
       <div className="h-12 md:h-16" />
@@ -219,19 +222,15 @@ export default function About({ about, links, experiences, skills }: AboutProps)
         </p>
 
         {/* grep results */}
-        <div className="font-[family-name:var(--font-mono)] text-sm md:text-base space-y-1 overflow-x-auto">
+        <div className="font-[family-name:var(--font-mono)] text-sm md:text-base space-y-4">
           {Object.entries(skills).map(([category, items]) => (
-            <div key={category} className="flex whitespace-nowrap">
+            <div key={category}>
               <span className="text-[var(--color-iris)]">{category}/</span>
-              <span className="text-[var(--color-muted)] mx-2">:</span>
-              <span>
-                {items.map((skill, j) => (
-                  <span key={skill}>
-                    <span className="text-[var(--color-foam)]">{skill}</span>
-                    {j < items.length - 1 && <span className="text-[var(--color-muted)]">, </span>}
-                  </span>
+              <div className="ml-4 mt-1 flex flex-wrap gap-x-2 gap-y-1">
+                {items.map((skill) => (
+                  <span key={skill} className="text-[var(--color-foam)]">{skill}</span>
                 ))}
-              </span>
+              </div>
             </div>
           ))}
         </div>
