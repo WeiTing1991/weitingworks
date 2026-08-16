@@ -1,7 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import { FaFolder, FaGithub, FaLinkedin } from "react-icons/fa";
+
+// react-icons v5 returns ReactNode which is incompatible with React 18 JSX types
+const Folder = FaFolder as unknown as React.FC;
+const Github = FaGithub as unknown as React.FC;
+const Linkedin = FaLinkedin as unknown as React.FC;
 
 function getFormattedDate() {
   const now = new Date();
@@ -13,11 +18,11 @@ function getFormattedDate() {
 }
 
 const directoryItems = [
-  { perm: "drwxr-xr-x", size: "-", user: "weitingchen", icon: <FaFolder />, name: "about", href: "/about", external: false },
-  { perm: "drwxr-xr-x", size: "-", user: "weitingchen", icon: <FaFolder />, name: "project", href: "/projects", external: false },
-  { perm: "drwxr-xr-x", size: "-", user: "weitingchen", icon: <FaFolder />, name: "blog", href: "/blog", external: false },
-  { perm: "-rw-r--r--", size: "-", user: "weitingchen", icon: <FaGithub />, name: "github", href: "https://github.com/WeiTing1991", external: true },
-  { perm: "-rw-r--r--", size: "-", user: "weitingchen", icon: <FaLinkedin />, name: "linkedin", href: "https://www.linkedin.com/in/chen-weiting/", external: true },
+  { perm: "drwxr-xr-x", size: "-", user: "weitingchen", icon: <Folder />, name: "about", href: "/about", external: false },
+  { perm: "drwxr-xr-x", size: "-", user: "weitingchen", icon: <Folder />, name: "project", href: "/projects", external: false },
+  { perm: "drwxr-xr-x", size: "-", user: "weitingchen", icon: <Folder />, name: "blog", href: "/blog", external: false },
+  { perm: "-rw-r--r--", size: "-", user: "weitingchen", icon: <Github />, name: "github", href: "https://github.com/WeiTing1991", external: true },
+  { perm: "-rw-r--r--", size: "-", user: "weitingchen", icon: <Linkedin />, name: "linkedin", href: "https://www.linkedin.com/in/chen-weiting/", external: true },
 ];
 
 const COMMAND = "ls me/";
