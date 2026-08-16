@@ -52,7 +52,11 @@ export default function Projects({ projects }: { projects: (Project & { slug: st
         Projects
       </h1>
 
-      <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <p className="font-[family-name:var(--font-mono)] text-sm text-[var(--color-muted)]">
+        Coming soon...
+      </p>
+
+      {/* <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {projects.map((project, index) => (
           <Link
             key={project.slug}
@@ -61,7 +65,6 @@ export default function Projects({ projects }: { projects: (Project & { slug: st
             className="group rounded-lg border border-[var(--color-overlay)] bg-[var(--color-base)] overflow-hidden hover:border-[var(--color-iris)] transition-all hover:shadow-md hover:shadow-[var(--color-shadow)] opacity-0 translate-y-6 [&.revealed]:opacity-100 [&.revealed]:translate-y-0"
             style={{ transitionDuration: "0.5s", transitionDelay: `${index * 0.07}s` }}
           >
-            {/* Image */}
             <div className="relative h-44 overflow-hidden">
               <Image
                 src={project.image}
@@ -72,8 +75,6 @@ export default function Projects({ projects }: { projects: (Project & { slug: st
               />
               <div className="absolute inset-0 bg-[var(--color-base)] opacity-30 group-hover:opacity-0 transition-opacity duration-500" />
             </div>
-
-            {/* Content */}
             <div className="p-5">
               <h2 className="font-[family-name:var(--font-mono)] text-base text-[var(--color-text)] group-hover:text-[var(--color-love)] transition-colors mb-2">
                 {project.title}
@@ -94,7 +95,7 @@ export default function Projects({ projects }: { projects: (Project & { slug: st
             </div>
           </Link>
         ))}
-      </div>
+      </div> */}
     </PanelLayout>
   );
 }
