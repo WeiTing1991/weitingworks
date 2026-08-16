@@ -1,5 +1,5 @@
 ---
-title: "Hello, world"
+title: "Blog Template"
 date: "2026-04-15"
 excerpt: "First post — how this blog is wired up and what you can put in a post."
 tags: ["meta", "nextjs"]
