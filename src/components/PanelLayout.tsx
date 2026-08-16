@@ -32,9 +32,9 @@ export default function PanelLayout({ path, title, children, terminalChrome }: P
           <div className="flex items-center gap-3">
             {terminalChrome && (
               <>
-                <span className="w-3 h-3 rounded-full bg-[#eb6f92]" />
-                <span className="w-3 h-3 rounded-full bg-[#f6c177]" />
-                <span className="w-3 h-3 rounded-full bg-[#31748f]" />
+                <span className="w-3 h-3 rounded-full bg-[#D75455]" />
+                <span className="w-3 h-3 rounded-full bg-[#E2943B]" />
+                <span className="w-3 h-3 rounded-full bg-[#7BA23F]" />
                 <span className="mx-1" />
               </>
             )}

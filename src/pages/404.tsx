@@ -14,9 +14,9 @@ export default function NotFound() {
         {/* Title bar */}
         <div className="flex items-center justify-between px-4 py-2.5 border-b border-[var(--color-overlay)]">
           <div className="flex items-center gap-2">
-            <span className="w-3 h-3 rounded-full bg-[#eb6f92]" />
-            <span className="w-3 h-3 rounded-full bg-[#f6c177]" />
-            <span className="w-3 h-3 rounded-full bg-[#31748f]" />
+            <span className="w-3 h-3 rounded-full bg-[#D75455]" />
+            <span className="w-3 h-3 rounded-full bg-[#E2943B]" />
+            <span className="w-3 h-3 rounded-full bg-[#7BA23F]" />
           </div>
           <span className="font-[family-name:var(--font-mono)] text-sm text-[var(--color-subtle)]">
             404

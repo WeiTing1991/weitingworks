@@ -1,40 +1,40 @@
 @import "tailwindcss";
 
-/* Rose Pine color palette */
+/* Suannhai color palette — Nippon Sumi (dark) / Shironeri (light) */
 :root {
-  --color-base: #191724;
-  --color-surface: #1f1d2e;
-  --color-overlay: #26233a;
-  --color-text: #e0def4;
-  --color-subtle: #908caa;
-  --color-muted: #6e6a86;
-  --color-love: #eb6f92;
-  --color-gold: #f6c177;
-  --color-rose: #ebbcba;
-  --color-pine: #31748f;
-  --color-foam: #9ccfd8;
-  --color-iris: #c4a7e7;
+  --color-base: #1C1C1C;       /* 墨 sumi — Ink */
+  --color-surface: #262626;    /* 濃鼠 koinezumi — Dark mouse */
+  --color-overlay: #3A3835;    /* 鈍色 nibiiro — Dull grey */
+  --color-text: #C4C7C1;       /* 灰白色 kaihakushoku — Ash white */
+  --color-subtle: #9E7A7A;     /* 梅鼠 umenezumi — Plum grey */
+  --color-muted: #9E7A7A;      /* 梅鼠 umenezumi — Plum grey */
+  --color-love: #D75455;       /* 臙丹 entan — Cinnabar red */
+  --color-gold: #E2943B;       /* 朽葉 kuchiba — Fallen leaves */
+  --color-rose: #C7802D;       /* 金茶 kincha — Gold brown */
+  --color-pine: #58B2DC;       /* 空 sora — Sky blue */
+  --color-foam: #7BA23F;       /* 萌黄 moegi — Sprout green */
+  --color-iris: #8B81C3;       /* 藤 fuji — Wisteria */
 
-  --color-nav-bg: rgba(25, 23, 36, 0.75);
-  --color-shadow: rgba(22, 20, 31, 0.7);
+  --color-nav-bg: rgba(28, 28, 28, 0.75);
+  --color-shadow: rgba(28, 28, 28, 0.7);
 }
 
 :root.light {
-  --color-base: #faf4ed;
-  --color-surface: #fffaf3;
-  --color-overlay: #f2e9e1;
-  --color-text: #575279;
-  --color-subtle: #797593;
-  --color-muted: #9893a5;
-  --color-love: #b4637a;
-  --color-gold: #ea9d34;
-  --color-rose: #d7827e;
-  --color-pine: #286983;
-  --color-foam: #56949f;
-  --color-iris: #907aa9;
+  --color-base: #FCFAF2;       /* 白練 shironeri — Bleached silk */
+  --color-surface: #F5F2E8;    /* 生成り色 kinariiro — Unbleached */
+  --color-overlay: #BDC0BA;    /* 白鼠 shironezumi — White mouse */
+  --color-text: #2C2A26;       /* 墨 sumi — Ink */
+  --color-subtle: #8C8578;     /* 鈍色 nibiiro — Dull grey */
+  --color-muted: #8C8578;      /* 鈍色 nibiiro — Dull grey */
+  --color-love: #973C3F;       /* 蘇芳 suō — Sappanwood */
+  --color-gold: #A86520;       /* 桑染 kuwazome — Mulberry */
+  --color-rose: #9C5A38;       /* 代赭 taisha — Burnt sienna */
+  --color-pine: #165E83;       /* 藍色 aiiro — Indigo */
+  --color-foam: #227D51;       /* 緑 midori — Green */
+  --color-iris: #745399;       /* 京紫 kyōmurasaki — Kyoto purple */
 
-  --color-nav-bg: rgba(250, 244, 237, 0.75);
-  --color-shadow: rgba(87, 82, 121, 0.12);
+  --color-nav-bg: rgba(252, 250, 242, 0.75);
+  --color-shadow: rgba(44, 42, 38, 0.12);
 }
 
 /* Selection */
