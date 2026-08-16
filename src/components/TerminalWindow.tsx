@@ -101,11 +101,17 @@ export default function TerminalWindow() {
 
               {/* Rows */}
               <ul className="space-y-1">
-                {directoryItems.map((item) => {
+                {directoryItems.map((item, index) => {
                   const isDir = item.perm.startsWith("d");
 
                   const content = (
-                    <li className="flex items-center gap-0 py-1 px-1 rounded hover:bg-[var(--color-overlay)] transition-colors cursor-pointer group text-base">
+                    <li
+                      className="flex items-center gap-0 py-1 px-1 rounded hover:bg-[var(--color-overlay)] transition-colors cursor-pointer group text-base opacity-0"
+                      style={{
+                        animation: "fadeIn 0.3s ease-out forwards",
+                        animationDelay: `${index * 0.07}s`,
+                      }}
+                    >
                       {/* Permissions */}
                       <span className="hidden md:inline w-28 shrink-0 text-[var(--color-muted)]">
                         <span className="text-[var(--color-subtle)]">{item.perm[0]}</span>

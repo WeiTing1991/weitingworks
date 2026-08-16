@@ -60,9 +60,7 @@ export default function PanelLayout({ path, title, children, terminalChrome }: P
 
         {/* Content area */}
         <div className="flex-1 overflow-y-auto p-6 md:p-10">
-          <div className="mx-auto">
-            {children}
-          </div>
+          {children}
         </div>
       </div>
     </div>

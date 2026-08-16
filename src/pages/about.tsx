@@ -92,10 +92,8 @@ export default function About({ about, links, experiences, skills }: AboutProps)
   const { typed, done } = useTypewriter(NAME, TYPE_SPEED);
   const [cursorVisible, setCursorVisible] = useState(true);
   const [aboutShown, setAboutShown] = useState(false);
-  const [expShown, setExpShown] = useState(false);
-  const [visibleRows, setVisibleRows] = useState(0);
 
-  // Flatten all experience positions for row-by-row animation
+  // Flatten all experience positions
   const expRows = experiences.flatMap((exp) =>
     exp.position.map((pos) => ({ company: exp.company, pos }))
   );
@@ -113,21 +111,6 @@ export default function About({ about, links, experiences, skills }: AboutProps)
     }
   }, [done]);
 
-  // After about shown, show experience rows one by one (like ls)
-  useEffect(() => {
-    if (aboutShown) {
-      const t = setTimeout(() => setExpShown(true), 600);
-      return () => clearTimeout(t);
-    }
-  }, [aboutShown]);
-
-  useEffect(() => {
-    if (expShown && visibleRows < expRows.length) {
-      const t = setTimeout(() => setVisibleRows((v) => v + 1), 120);
-      return () => clearTimeout(t);
-    }
-  }, [expShown, visibleRows, expRows.length]);
-
   return (
     <PanelLayout path="about/" title="About" terminalChrome>
       {/* Hero — big name with typing animation */}
@@ -141,19 +124,9 @@ export default function About({ about, links, experiences, skills }: AboutProps)
             }}
           />
         </div>
-        <p
-          className="font-[family-name:var(--font-mono)] text-base md:text-lg text-[var(--color-muted)] mt-4"
-          style={{
-            opacity: done ? 1 : 0,
-            transform: done ? "translateY(0)" : "translateY(8px)",
-            transition: "opacity 0.5s ease-out 0.2s, transform 0.5s ease-out 0.2s",
-          }}
-        >
-          Software Engineer
-        </p>
       </section>
 
-      {/* About — text in a box */}
+      {/* About — plain text */}
       <section
         className="mb-28 md:mb-40"
         style={{
@@ -162,28 +135,20 @@ export default function About({ about, links, experiences, skills }: AboutProps)
           transition: "opacity 0.6s ease-out, transform 0.6s ease-out",
         }}
       >
-        <div className="rounded-lg border border-[var(--color-overlay)] bg-[var(--color-base)] p-6 md:p-8">
-          <div className="space-y-5 text-[var(--color-text)] text-lg md:text-xl leading-relaxed">
-            <p>
-              Hi there! I&apos;m WeiTing Chen, a software engineer based in Switzerland.
-            </p>
-            <p>
-              With several years of experience in developing{" "}
-              <strong>Computer Geometry, CAD/CAM, Robotics, Desktop/Web Application, and Machine Learning</strong>.
-            </p>
-            <p>
-              In my free time, I like contributing to open source projects and building my muscle at gym!
-            </p>
-          </div>
-        </div>
+        <p className="text-[var(--color-text)] text-lg md:text-xl leading-relaxed">
+          Software Engineer based in Switzerland. With several years of experience in <span className="text-[var(--color-foam)]">Computer Geometry</span>, <span className="text-[var(--color-foam)]">CAD/CAM</span>, <span className="text-[var(--color-foam)]">Robotics</span>, <span className="text-[var(--color-foam)]">Desktop/Web Apps</span>, and <span className="text-[var(--color-foam)]">Machine Learning</span>. In my free time, I like contributing to open source projects and building my muscle at the gym.
+        </p>
       </section>
 
       <div className="h-12 md:h-16" />
 
       {/* Experience — bat/cat style */}
       <section
-        className="mb-44 md:mb-56"
-        style={{ opacity: expShown ? 1 : 0, transition: "opacity 0.4s ease-out" }}
+        className="mb-44 md:mb-56 opacity-0"
+        style={{
+          animation: aboutShown ? "fadeIn 0.5s ease-out forwards" : "none",
+          animationDelay: "0.3s",
+        }}
       >
         {/* bat command prompt */}
         <p className="font-[family-name:var(--font-mono)] text-base md:text-lg text-[var(--color-muted)] mb-8">
@@ -202,13 +167,16 @@ export default function About({ about, links, experiences, skills }: AboutProps)
           <div className="overflow-x-auto">
             <table className="w-full text-base md:text-lg">
               <tbody>
-                {expRows.slice(0, visibleRows).map(({ company, pos }, idx) => {
+                {expRows.map(({ company, pos }, idx) => {
                   const title = Array.isArray(pos.title) ? pos.title.join(", ") : pos.title;
                   return (
                     <tr
                       key={`${company}-${idx}`}
-                      className="border-b border-[var(--color-overlay)] last:border-b-0 hover:bg-[var(--color-surface)] transition-colors"
-                      style={{ animation: "fadeIn 0.3s ease-out forwards" }}
+                      className="border-b border-[var(--color-overlay)] last:border-b-0 hover:bg-[var(--color-surface)] transition-colors opacity-0"
+                      style={{
+                        animation: aboutShown ? "fadeIn 0.3s ease-out forwards" : "none",
+                        animationDelay: `${0.3 + idx * 0.08}s`,
+                      }}
                     >
                       <td className="w-12 text-right pr-4 py-5 border-r border-[var(--color-overlay)] select-none" style={{ color: "var(--color-muted)", opacity: 0.5 }}>
                         {idx + 1}
@@ -237,11 +205,10 @@ export default function About({ about, links, experiences, skills }: AboutProps)
 
       {/* Skills — fd style */}
       <section
-        className="mb-10"
+        className="mb-10 opacity-0"
         style={{
-          opacity: visibleRows >= expRows.length ? 1 : 0,
-          transform: visibleRows >= expRows.length ? "translateY(0)" : "translateY(16px)",
-          transition: "opacity 0.6s ease-out, transform 0.6s ease-out",
+          animation: aboutShown ? "fadeIn 0.5s ease-out forwards" : "none",
+          animationDelay: `${0.3 + expRows.length * 0.08 + 0.2}s`,
         }}
       >
         {/* grep command prompt */}
