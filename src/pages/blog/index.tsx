@@ -1,13 +1,9 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Head from "next/head";
 import Link from "next/link";
 import type { GetStaticProps } from "next";
-
-import Navbar from "@/sections/Navbar";
-import SocialIcons from "@/components/SocialIcons";
-import BackHome from "@/components/BackHome";
+import PanelLayout from "@/components/PanelLayout";
 
 type PostMeta = {
   slug: string;
@@ -19,46 +15,54 @@ type PostMeta = {
 
 export default function BlogIndex({ posts }: { posts: PostMeta[] }) {
   return (
-    <div className="app">
-      <Head>
-        <title>Blog — Weiting Chen</title>
-        <link rel="shortcut icon" href="/favicon.ico" />
-      </Head>
-      <Navbar />
-      <SocialIcons />
-      <BackHome />
-      <main>
-        <section className="blog-list">
-          <h1 className="blog-list-title">Blog</h1>
-          <p className="blog-list-subtitle">
-            Notes on what I&apos;m building, reading, and learning.
-          </p>
+    <PanelLayout path="blog/" title="Blog" terminalChrome>
+      <div className="max-w-3xl mx-auto">
+      <h1 className="font-[family-name:var(--font-mono)] text-2xl md:text-3xl text-[var(--color-text)] mb-2">
+        Blog
+      </h1>
+      <p className="text-[var(--color-subtle)] mb-8">
+        Notes on what I&apos;m building, reading, and learning.
+      </p>
 
-          {posts.length === 0 ? (
-            <p className="blog-list-empty">No posts yet.</p>
-          ) : (
-            <ul className="blog-list-items">
-              {posts.map((post) => (
-                <li key={post.slug} className="blog-list-item">
-                  <Link href={`/blog/${post.slug}`} className="blog-list-item-link">
-                    <time className="blog-list-item-date">{post.date}</time>
-                    <h2 className="blog-list-item-title">{post.title}</h2>
-                    <p className="blog-list-item-excerpt">{post.excerpt}</p>
-                    {post.tags?.length > 0 && (
-                      <ul className="blog-list-item-tags">
-                        {post.tags.map((tag) => (
-                          <li key={tag}>{tag}</li>
-                        ))}
-                      </ul>
-                    )}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
-        </section>
-      </main>
-    </div>
+      {posts.length === 0 ? (
+        <p className="text-[var(--color-muted)] font-[family-name:var(--font-mono)]">
+          No posts yet.
+        </p>
+      ) : (
+        <div className="space-y-6">
+          {posts.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="block p-4 rounded-lg border border-[var(--color-overlay)] hover:border-[var(--color-iris)] bg-[var(--color-base)] transition-colors group"
+            >
+              <time className="font-[family-name:var(--font-mono)] text-xs text-[var(--color-muted)]">
+                {post.date}
+              </time>
+              <h2 className="text-lg text-[var(--color-text)] group-hover:text-[var(--color-love)] transition-colors mt-1 mb-1">
+                {post.title}
+              </h2>
+              <p className="text-sm text-[var(--color-subtle)] line-clamp-2">
+                {post.excerpt}
+              </p>
+              {post.tags?.length > 0 && (
+                <div className="flex flex-wrap gap-1.5 mt-2">
+                  {post.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="font-[family-name:var(--font-mono)] text-xs px-1.5 py-0.5 rounded text-[var(--color-foam)] bg-[var(--color-overlay)]"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </Link>
+          ))}
+        </div>
+      )}
+      </div>
+    </PanelLayout>
   );
 }
 

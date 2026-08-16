@@ -1,4 +1,13 @@
 {
+  "about": [
+    { "key": "intro", "value": "Hi there! I'm WeiTing Chen, a software enginner based in Switzerland. " },
+    { "key": "education", "value": "With serveal year experince in developping computer geometry, CAD/CAM, Robotics, Desktop/Web Application, and Machine Learning" },
+    { "key": "hobby", "value": "In my free time, I like contributing to open source projects and building my muscle at gym!" }
+  ],
+  "links": [
+    { "label": "GitHub", "href": "https://github.com/WeiTing1991" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/chen-weiting/" }
+  ],
   "experiences": [
     {
       "company": "Manukai AG",
@@ -114,7 +123,7 @@
       "position": [
         {
           "link": "",
-          "title": "Computational Software Engineer",
+          "title": "Computational Software Developer",
           "group": "",
           "duration": "Jan 2019 - Aug 2019",
           "skill": [
@@ -128,36 +137,18 @@
     }
   ],
   "skills": {
-    "language": [
-      "Python",
-      "C#",
-      "Lua",
-      "TypeScript",
-      "C/C++"
-    ],
-    "backEnd": [
-      "FastAPI",
-      "MongoDb",
-      "SQL",
-      ".Net",
-      "Bash",
-      "Docker",
-      "Node/Bun",
-      "CI/CD(Github Actions)"
-    ],
-    "frontEnd": [
-      "React.js",
-      "Three.js",
-      "webXR.js"
-    ],
-    "industrial": [
-      "ABB Rapid",
-      "PLC ST",
-      "Profinet"
-    ],
-    "new": [
-      "Go",
-      "Flutter"
-    ]
+    "language": ["C#", "C++", "Python", "Lua", "TypeScript"],
+    "CAD/CAM & CG": ["Rhino (OpenNURBS) & Grasshopper", "Siemens NX", "ArchiCAD", "Revit", "Fusion 360", "OCCT", "CGAL", "libigl", "Open3D"],
+    "robotics": ["ABB Rapid", "UR Script", "ROS", "PLC ST", "EtherCAT"],
+    "ML": ["PyTorch", "PyTorch Geometric", "CLIP", "scikit-learn", "W&B"],
+    "devtools": [".NET", "CMake", "Docker", "CI/CD (GitHub Actions)", "Bash", "Git"],
+    "web": ["React.js", "Next.js", "Three.js", "WebXR", "FastAPI", "MongoDB", "PostgreSQL"]
+  },
+  "skills_full": {
+    "language": ["C#", "C++", "Python", "Lua", "TypeScript"],
+    "CAD/CAM & CG": ["Rhino (OpenNURBS)", "Grasshopper", "ArchiCAD", "Revit", "Siemens NX", "OCCT", "CGAL", "libigl"],
+    "robotics": ["ABB Rapid", "KUKA KRL", "UR Script", "ROS", "PLC ST", "Profinet", "EtherCAT"],
+    "devtools": [".NET", "WPF", "WinForms", "Docker", "CMake", "Conan", "CI/CD", "Bash", "Git"],
+    "web": ["React.js", "Next.js", "Three.js", "FastAPI", "Node/Bun", "MongoDB", "PostgreSQL"]
   }
 }

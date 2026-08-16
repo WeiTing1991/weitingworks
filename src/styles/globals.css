@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+/* Rose Pine color palette */
+:root {
+  --color-base: #191724;
+  --color-surface: #1f1d2e;
+  --color-overlay: #26233a;
+  --color-text: #e0def4;
+  --color-subtle: #908caa;
+  --color-muted: #6e6a86;
+  --color-love: #eb6f92;
+  --color-gold: #f6c177;
+  --color-rose: #ebbcba;
+  --color-pine: #31748f;
+  --color-foam: #9ccfd8;
+  --color-iris: #c4a7e7;
+
+  --color-nav-bg: rgba(25, 23, 36, 0.75);
+  --color-shadow: rgba(22, 20, 31, 0.7);
+}
+
+:root.light {
+  --color-base: #faf4ed;
+  --color-surface: #fffaf3;
+  --color-overlay: #f2e9e1;
+  --color-text: #575279;
+  --color-subtle: #797593;
+  --color-muted: #9893a5;
+  --color-love: #b4637a;
+  --color-gold: #ea9d34;
+  --color-rose: #d7827e;
+  --color-pine: #286983;
+  --color-foam: #56949f;
+  --color-iris: #907aa9;
+
+  --color-nav-bg: rgba(250, 244, 237, 0.75);
+  --color-shadow: rgba(87, 82, 121, 0.12);
+}
+
+/* Selection */
+::selection {
+  color: white;
+  background: var(--color-love);
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-muted) var(--color-base);
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-text);
+  font-family: var(--font-sans), sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-base);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-muted);
+  border: 3px solid var(--color-base);
+  border-radius: 10px;
+}
+
+/* Typewriter animation for terminal landing page */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes borderPulse {
+  0% { border-color: var(--color-muted); }
+  50% { border-color: var(--color-iris); }
+  100% { border-color: var(--color-muted); }
+}
